@@ -90,7 +90,7 @@ int main() {
             quit = true;
             break;
         default:
-            cout << "Incorrect input. Enter a choice between 1, 2, 3, or 0." << endl;
+            cout << "Incorrect input. Enter a choice between 1, 2, 3, or 0: " << endl;
         }
     }
 

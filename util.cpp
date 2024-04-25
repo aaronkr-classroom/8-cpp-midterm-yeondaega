@@ -25,7 +25,7 @@ int printGreeting() {
 	int choice;
 	while (cin >> choice) {
 		if (choice != 0 && choice != 1 && choice != 2 && choice != 3) {
-			cout << "Invalid selection. Choose 1, 2, 3, or 0 to quit.";
+			cout << "Invalid selection. Choose 1, 2, 3, or 0 to quit: ";
 		}
 		else {
 			return choice;
@@ -119,12 +119,38 @@ int checkHw(vector<Student_info>& did, vector<Student_info>& didnt) {
 	cout << endl;
 }
 
+void write_analysis(ostream& out, const string& name,
+	double analysis(const vector<Student_info>&),
+	const vector<Student_info>& students, 
+	string vec) {
+
+	out << name << ": median(" << vec << ") = " << analysis(students) << endl;
+}
+
 void analyzeGrades(vector<Student_info>& did, vector<Student_info>& didnt) {
 	cout << endl;
 
+	if (did.empty()) {
+		write_analysis(cout, "average", average_analysis, didnt, "didnt");
+		write_analysis(cout, "median", median_analysis, didnt, "didnt");
+		write_analysis(cout, "median of homework turned in",
+			optimistic_median_analysis, didnt, "didnt");
+		cout << endl;
+		return;
+	}
+
+	if (didnt.empty()) {
+		write_analysis(cout, "average", average_analysis, did, "did");
+		write_analysis(cout, "median", median_analysis, did, "did");
+		write_analysis(cout, "median of homework turned in",
+			optimistic_median_analysis, did, "did");
+		cout << endl;
+		return;
+	}
+
 	// 6장: 분석 실행
-	write_analysis(cout, "median", median_analysis, did, didnt);
 	write_analysis(cout, "average", average_analysis, did, didnt);
+	write_analysis(cout, "median", median_analysis, did, didnt);
 	write_analysis(cout, "median of homework turned in",
 		optimistic_median_analysis, did, didnt);
 
