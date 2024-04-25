@@ -45,7 +45,8 @@ double optimistic_median_analysis(const vector<Student_info>& students) {
 
 시험문제는 다음 [구글폼 링크](https://forms.gle/5yL8Az6oxV9TWVPL7)에서 확인하실 수 있습니다.
 
-**콘솔에 출력되는 정확한 텍스트로 모든 질문에 답하십시오.** (값이 `int`인 경우 `int`를 사용합니다. 값이 소수점 이하 4자리의 `float`인 경우 전체 값을 입력합니다.)
+**콘솔에 출력되는 정확한 텍스트로 모든 질문에 답하십시오.**<br>
+(값이 `int`인 경우 `int`를 사용합니다. 값이 소수점 이하 4자리의 `float`인 경우 전체 값을 입력합니다.)
 
 질문에서 두 학생의 이름을 묻는 경우 화면에 나타나는 대로 *정렬된 알파벳 순서*로 이름을 입력합니다.<br>
 (예: `John + Zoe`, `Aaron & Ben`, `Charlie, Tom` 또는 `Eric and Megan`).<br>
