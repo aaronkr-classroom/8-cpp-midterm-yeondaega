@@ -13,7 +13,7 @@
 2. Visual Studio를 열고 새로운 `midterm` 프로젝트를 만듭니다.
 3. Windows 탐색기에서 이 저장소에 포함된 모든 코드 파일을 새로 생성된 `midterm` 프로젝트 폴더로 이동합니다.
 4. Visual Studio에서 포함된 모든 파일을 해당 `소스 파일`, `헤더 파일` 또는 `리소스 파일` 폴더에 추가합니다.
-5. 새로운 `analysis` *헤더*와 *소스* 파일을 만들고 책 6장의 코드를 여기에 추가하세요. 필요한 기능 목록은 아래에 제공됩니다.
+5. 새로운 `analysis` **헤더**와 **소스** 파일을 만들고 책 6장의 코드를 여기에 추가하세요. 필요한 기능 목록은 아래에 제공됩니다.
 6. 이 저장소의 `main.cpp` 파일을 실행하고 [구글폼 링크](https://forms.gle/5yL8Az6oxV9TWVPL7)에서 직접 아래 제공된 테스트 질문에 답하세요.
 
 ### Required functions / 필수 함수
@@ -47,4 +47,6 @@ double optimistic_median_analysis(const vector<Student_info>& students) {
 
 **콘솔에 출력되는 정확한 텍스트로 모든 질문에 답하십시오.** (값이 `int`인 경우 `int`를 사용합니다. 값이 소수점 이하 4자리의 `float`인 경우 전체 값을 입력합니다.)
 
-질문에서 두 학생의 이름을 묻는 경우 화면에 나타나는 대로 *정렬된 알파벳 순서*로 이름을 입력합니다(예: `John + Zoe`, `Aaron & Ben`, `Charlie, Tom` 또는 `Eric and Megan`). `+`나 `&`나 `,` 문자나 `and` 단어를 사용하여 이름을 구분할 수 있습니다.
+질문에서 두 학생의 이름을 묻는 경우 화면에 나타나는 대로 *정렬된 알파벳 순서*로 이름을 입력합니다.<br>
+(예: `John + Zoe`, `Aaron & Ben`, `Charlie, Tom` 또는 `Eric and Megan`).<br>
+`+`나 `&`나 `,` 문자나 `and` 단어를 사용하여 이름을 구분할 수 있습니다.
